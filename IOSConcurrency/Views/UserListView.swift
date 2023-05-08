@@ -9,7 +9,7 @@ import SwiftUI
 
 struct UserListView: View {
     #warning("remove the forPreview argument or set it to false before uploading to App store")
-    @StateObject var vm = UserListViewModel(forPreview: true)
+    @StateObject var vm = UserListViewModel(forPreview: false)
     
     var body: some View {
         NavigationView {
@@ -26,6 +26,18 @@ struct UserListView: View {
                     }
                 }
             }
+            .overlay(content: {
+                if vm.isLoading {
+                    ProgressView()
+                }
+            })
+            .alert("Application Error", isPresented: $vm.showAlert, actions: {
+                Button("Ok"){}
+            }, message: {
+                if let errorMessage = vm.errorMessage {
+                    Text(errorMessage)
+                }
+            })
             .navigationTitle("Users")
             .listStyle(.plain)
             .onAppear{

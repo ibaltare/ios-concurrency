@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		373847552A0A033A00F40D68 /* UserAndPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373847542A0A033A00F40D68 /* UserAndPost.swift */; };
 		376AA3D22A0876290059A4DA /* IOSConcurrencyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376AA3D12A0876290059A4DA /* IOSConcurrencyApp.swift */; };
 		376AA3D42A0876290059A4DA /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376AA3D32A0876290059A4DA /* UserListView.swift */; };
 		376AA3D62A08762B0059A4DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 376AA3D52A08762B0059A4DA /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		373847542A0A033A00F40D68 /* UserAndPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAndPost.swift; sourceTree = "<group>"; };
 		376AA3CE2A0876290059A4DA /* IOSConcurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSConcurrency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		376AA3D12A0876290059A4DA /* IOSConcurrencyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSConcurrencyApp.swift; sourceTree = "<group>"; };
 		376AA3D32A0876290059A4DA /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			children = (
 				376AA3E12A08793B0059A4DA /* User.swift */,
 				376AA3E32A087A370059A4DA /* Post.swift */,
+				373847542A0A033A00F40D68 /* UserAndPost.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				376AA3E72A087C5C0059A4DA /* APIService.swift in Sources */,
 				376AA3D22A0876290059A4DA /* IOSConcurrencyApp.swift in Sources */,
 				376AA3F42A08919E0059A4DA /* MockData.swift in Sources */,
+				373847552A0A033A00F40D68 /* UserAndPost.swift in Sources */,
 				376AA3E22A08793B0059A4DA /* User.swift in Sources */,
 				376AA3E42A087A370059A4DA /* Post.swift in Sources */,
 			);
